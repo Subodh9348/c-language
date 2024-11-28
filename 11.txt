@@ -1,0 +1,60 @@
+1)write a c program to swap the numbers using third variable
+input: a=10,b=5
+output: a=5,b=10
+#include<stdio.h>
+int main(){
+int a=10,b=5,c;
+c=a;
+a=b;
+b=c;
+printf("%d",c);
+return 0;
+}
+
+2) write a c program to swap the numbers without using third variable
+input: a=10,b=5
+ output: a=5,b=10
+#include <stdio.h>
+
+int main() {
+    int a=10,b=5;
+    a=a+b;
+    b=a-b;
+    a=a-b;
+    printf("%d=a%d=b",a,b);
+
+    return 0;
+}
+output:
+5=a,10=b
+
+3.write a c program addition of two numbers with out using + operator
+
+#include <stdio.h>
+
+int main() {
+int a=5,b=7,c;
+c=a-(-b);
+printf("%d",c);
+
+    return 0;
+}
+
+output:12
+
+4. write a c program to make sum of the given digit 
+input: a=25 
+output: 7
+
+#include <stdio.h>
+
+int main() {
+    int a=25,b1,b2,c;
+    b1=a%10;
+    b2=a/10;
+    c=b1+b2;
+    printf("%d",c);
+    
+
+    return 0;
+}
